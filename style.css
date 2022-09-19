@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  background-color: black;
+}
+
+.box {
+  height: 5000px;
+  border: 5px solid;
+}
+
+.headerBox {
+  height: 55px;
+  background-color: whitesmoke;
+  border: 5px solid;
+  border-color: red;
+}
+
+.playerName {
+  position: absolute;
+  top: -12px;
+  left: 18px;
+  font-size: 25px;
+}
+
+.teamName {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  font-size: 25px;
+}
+
+.box2 {
+  position: relative;
+  height: 100%;
+  border: 5px solid;
+  border-color: red;
+}
+
+.blackSpace {
+  position: relative;
+  background-color: black;
+  height: 20px;
+}
+
+.seasonStatsBox {
+  position: relative;
+  height: 200px;
+  background-color: whitesmoke;
+  border: 5px solid;
+  border-color: red;
+}
+
+.seasonStatsTitle {
+  position: absolute;
+  font-size: 25px;
+  top: -22px;
+  left: 8px;
+}
+
+.blackSpace2 {
+  position: relative;
+  background-color: black;
+  height: 20px;
+}
+
+.ProjectedSeasonStatsBox {
+  position: relative;
+  height: 200px;
+  background-color: whitesmoke;
+  border: 5px solid;
+  border-color: red;
+}
+
+.ProjectedSeasonStatsTitle {
+  position: absolute;
+  font-size: 25px;
+  top: -22px;
+  left: 8px;
+}
+
+.blackSpace3 {
+  position: relative;
+  background-color: black;
+  height: 20px;
+}
+
+.matchup {
+  position: relative;
+  height: 200px;
+  background-color: whitesmoke;
+  border: 5px solid;
+  border-color: red;
+}
+
+.matchupTitle {
+  position: absolute;
+  font-size: 25px;
+  top: -22px;
+  left: 8px;
+}
