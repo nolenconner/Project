@@ -65,27 +65,6 @@ body {
   height: 20px;
 }
 
-.ProjectedSeasonStatsBox {
-  position: relative;
-  height: 200px;
-  background-color: whitesmoke;
-  border: 5px solid;
-  border-color: red;
-}
-
-.ProjectedSeasonStatsTitle {
-  position: absolute;
-  font-size: 25px;
-  top: -22px;
-  left: 8px;
-}
-
-.blackSpace3 {
-  position: relative;
-  background-color: black;
-  height: 20px;
-}
-
 .matchup {
   position: relative;
   height: 200px;
