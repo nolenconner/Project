@@ -59,6 +59,11 @@ body {
   left: 8px;
 }
 
+.seasonStats {
+  position: relative;
+  top: 40px;
+}
+
 .blackSpace2 {
   position: relative;
   background-color: black;
