@@ -14,12 +14,13 @@ colnames(MikeTroutSeaonStats2019)[20] <- "wrcPlus"
 colnames(FangraphsHitterData)[20] <- "wrcPlus"
 
 WrcPlus2019 <- arrange(FangraphsHitterData, desc(wrcPlus))
-MikeTroutName <- data_frame("Mike Trout")
-colnames(MikeTroutName)[1] <- "Name"
+#MikeTroutName <- data_frame("Mike Trout")
+#colnames(MikeTroutName)[1] <- "Name"
 WrcPlusPercentile <- function(WrcPlus){
   Percentile = ((nrow(WrcPlus2019) - (which(WrcPlus2019$wrcPlus == WrcPlus))) / nrow(WrcPlus2019)) * 100
   #Percentile = ecdf(WrcPlus2019$wrcPlus)(WrcPlus2019$wRC)
   return (Percentile)
+  
 }
 
 
@@ -28,7 +29,7 @@ colnames(MikeTroutHitterQuality)[1] <- "HitterQuality"
 
 
 
-MikeTroutFangraphsExport <- data.frame(MikeTroutName,MikeTroutSeaonStats2019, MikeTroutHitterQuality)
+MikeTroutFangraphsExport <- data.frame(MikeTroutSeaonStats2019, MikeTroutHitterQuality)
 MikeTroutFangraphsExport$Off <-  NULL
 MikeTroutFangraphsExport$Def <-  NULL
 MikeTroutFangraphsExport$Off <-  NULL
@@ -37,6 +38,7 @@ MikeTroutFangraphsExport$wOBA <-  NULL
 MikeTroutFangraphsExport$xwOBA <-  NULL
 MikeTroutFangraphsExport$BABIP <-  NULL
 MikeTroutFangraphsExport$ISO <-  NULL
+MikeTroutFangraphsExport$WAR <-  NULL
 
 view(MikeTroutFangraphsExport)
 view(MikeTroutHitterPlus2019)
