@@ -1,0 +1,183 @@
+html,
+body {
+  height: 800px;
+  margin: 0px;
+  padding: 0px;
+  background-color: skyblue;
+}
+
+p {
+  margin: 0px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  height: 100px;
+  background-color: whitesmoke;
+  top: 0;
+}
+
+.subHeader {
+  position: relative;
+  height: 30px;
+  background-color: navy;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.QualityStats {
+  color: navy;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.QualityStatsButton {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 10%;
+}
+
+.OtherResources {
+  color: navy;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 10%;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #00a4bd;
+}
+
+.LeftCollumn {
+  position: relative;
+  min-width: 150px;
+  max-width: 5%;
+  left: 40%;
+  height: 715px;
+  top: 5px;
+}
+
+.MatchupBox {
+  position: relative;
+  height: 95px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+}
+
+.Line1 {
+  position: relative;
+  height: 5px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: navy;
+  top: 5px;
+}
+
+.PrizePicksBox {
+  position: relative;
+  height: 95px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+  top: 10px;
+}
+
+.PitcherRankingsHeader {
+  position: relative;
+  height: 50px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: navy;
+  top: 15px;
+}
+
+.PitcherBox1 {
+  position: relative;
+  height: 95px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+  top: 20px;
+}
+
+.PitcherBox2 {
+  position: relative;
+  height: 95px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+  top: 25px;
+}
+
+.HitterRankingsHeader {
+  position: relative;
+  height: 50px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: navy;
+  top: 30px;
+}
+
+.HitterBox1 {
+  position: relative;
+  height: 95px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+  top: 35px;
+}
+
+.HitterBox2 {
+  position: relative;
+  height: 95px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+  top: 40px;
+}
+
+.RightCollumn {
+  position: relative;
+  min-width: 150px;
+  max-width: 5%;
+  left: 50%;
+  height: 715px;
+  top: -710px;
+}
+
+.Tools {
+  position: relative;
+  height: 715px;
+  min-width: 150px;
+  max-width: 5%;
+  background-color: whitesmoke;
+}

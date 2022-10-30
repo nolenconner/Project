@@ -1,6 +1,42 @@
+library(baseballr)
 library(tidyverse)
 library(dplyr)
-JacobDegromTable <- read_csv('/Users/nolenconner/Desktop/R/DegromFangraphs.csv')
+
+JacobDegromTable <- read_csv('/Users/nolenconner/Desktop/Project/R/FangraphsTest/DegromFangraphs.csv')
+FangraphsPitcherData <-  read_csv('/Users/nolenconner/Desktop/Project/R/FangraphsTest/FanGraphsPitcherLeaderboard.csv')
 JacobDegromSeaonStats2019 <- JacobDegromTable[6, ]
-write.csv(MikeTroutSeaonStats2019, file = "/Users/nolenconner/Desktop/R/JacobDegromSeaonStats2019two.csv")
+colnames(FangraphsPitcherData)[7] <- "StrikeoutPercentage"
+colnames(FangraphsPitcherData)[8] <- "WalkPercentage"
+
+
+Fip2019 <- arrange(FangraphsPitcherData, FIP)
+Siera2019 <- arrange(FangraphsPitcherData, SIERA)
+StrikeoutPercentage2019 <- arrange(FangraphsPitcherData, desc(StrikeoutPercentage))
+
+FipPercentile <- function(Fip){
+  Percentile = ((nrow(Fip2019) - (which(Fip2019$FIP == Fip))) / nrow(Fip2019)) * 100
+  return (Percentile)
+}
+
+SieraPercentile <- function(Siera){
+  Percentile = ((nrow(Siera2019) - (which(Siera2019$SIERA == Siera))) / nrow(Siera2019)) * 100
+  return (Percentile)
+}
+
+StrikeoutPercentagePercentile <- function(kPercentage){
+  Percentile = ((nrow(StrikeoutPercentage2019) - (which(StrikeoutPercentage2019$StrikeoutPercentage == kPercentage))) / nrow(StrikeoutPercentage2019)) * 100
+  return (Percentile)
+}
+
+
+
+FipPercentile(4.11)[1]
+SieraPercentile(4.31)[1]
+StrikeoutPercentagePercentile(39.9)[1]
+
+
+
+
+
+
 

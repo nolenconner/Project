@@ -5,7 +5,7 @@ library(dplyr)
 
 MikeTroutTable <- read_csv('/Users/nolenconner/Desktop/Project/R/FangraphsTest/TroutFangraphs.csv')
 HitterPlus2019 <- read_csv('/Users/nolenconner/Desktop/Project/R/FangraphsTest/HittingPlusLeaderboard2019.csv')
-FangraphsHitterData <-  read_csv('/Users/nolenconner/Desktop/Project/R/FangraphsTest/FanGraphsLeaderboard.csv')
+FangraphsHitterData <-  read_csv('/Users/nolenconner/Desktop/Project/R/FangraphsTest/FanGraphsHitterLeaderboard.csv')
 
 
 MikeTroutHitterPlus2019 <-HitterPlus2019[1, ]
