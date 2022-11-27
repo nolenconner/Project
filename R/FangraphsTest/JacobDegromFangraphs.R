@@ -34,6 +34,7 @@ FipPercentile(4.11)[1]
 SieraPercentile(4.31)[1]
 StrikeoutPercentagePercentile(39.9)[1]
 
+write.csv(JacobDegromSeaonStats2019, file = "/Users/nolenconner/Desktop//Project/HomePage/JacobDegromTable/data/JacobDegromSeaonStats2019.csv")
 
 
 

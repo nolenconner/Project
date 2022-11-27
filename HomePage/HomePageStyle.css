@@ -20,6 +20,7 @@ p {
   height: 100px;
   background-color: whitesmoke;
   top: 0;
+  z-index: 1;
 }
 
 .subHeader {
@@ -28,6 +29,7 @@ p {
   background-color: navy;
   top: 100%;
   transform: translateY(-100%);
+  z-index: 1;
 }
 
 .QualityStats {
@@ -79,25 +81,26 @@ p {
 .LeftCollumn {
   position: relative;
   min-width: 150px;
-  max-width: 5%;
-  left: 40%;
+  max-width: 20%;
+  left: 20%;
   height: 715px;
-  top: 5px;
+  top: -3px;
+}
+
+.pitcherRankings {
+  color: whitesmoke;
+  font-size: large;
 }
 
 .MatchupBox {
   position: relative;
   height: 95px;
-  min-width: 150px;
-  max-width: 5%;
   background-color: whitesmoke;
 }
 
 .Line1 {
   position: relative;
   height: 5px;
-  min-width: 150px;
-  max-width: 5%;
   background-color: navy;
   top: 5px;
 }
@@ -105,8 +108,6 @@ p {
 .PrizePicksBox {
   position: relative;
   height: 95px;
-  min-width: 150px;
-  max-width: 5%;
   background-color: whitesmoke;
   top: 10px;
 }
@@ -114,8 +115,6 @@ p {
 .PitcherRankingsHeader {
   position: relative;
   height: 50px;
-  min-width: 150px;
-  max-width: 5%;
   background-color: navy;
   top: 15px;
 }
@@ -123,61 +122,107 @@ p {
 .PitcherBox1 {
   position: relative;
   height: 95px;
-  min-width: 150px;
-  max-width: 5%;
-  background-color: whitesmoke;
-  top: 20px;
+  background-color: skyblue;
+  top: 25px;
 }
 
 .PitcherBox2 {
   position: relative;
   height: 95px;
-  min-width: 150px;
-  max-width: 5%;
-  background-color: whitesmoke;
-  top: 25px;
+  background-color: skyblue;
+  top: 120px;
 }
 
 .HitterRankingsHeader {
   position: relative;
   height: 50px;
-  min-width: 150px;
-  max-width: 5%;
   background-color: navy;
-  top: 30px;
+  top: 225px;
+}
+
+.hitterRankings {
+  color: whitesmoke;
+  font-size: large;
 }
 
 .HitterBox1 {
   position: relative;
   height: 95px;
-  min-width: 150px;
-  max-width: 5%;
-  background-color: whitesmoke;
-  top: 35px;
+  background-color: skyblue;
+  top: 235px;
 }
 
 .HitterBox2 {
   position: relative;
   height: 95px;
-  min-width: 150px;
-  max-width: 5%;
-  background-color: whitesmoke;
-  top: 40px;
+  background-color: skyblue;
+  top: 330px;
 }
 
 .RightCollumn {
   position: relative;
+  left: 60%;
   min-width: 150px;
-  max-width: 5%;
-  left: 50%;
+  max-width: 20%;
   height: 715px;
-  top: -710px;
+  top: -719px;
 }
 
 .Tools {
   position: relative;
-  height: 715px;
-  min-width: 150px;
-  max-width: 5%;
+  height: 645px;
   background-color: whitesmoke;
+  border-style: solid;
+  border-color: navy;
+  border-width: 3px;
+}
+
+.toolHeader {
+  position: relative;
+  height: 30px;
+  background-color: navy;
+}
+
+.toolTitle {
+  color: whitesmoke;
+  font-size: large;
+}
+
+.contentBox {
+  height: 710px;
+  min-width: 500px;
+  max-width: 50%;
+  position: relative;
+  top: 46%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.shoheiOhtani {
+  position: relative;
+
+  height: 150px;
+  object-fit: cover;
+}
+
+.jacobdeGrom {
+  position: relative;
+
+  height: 150px;
+  object-fit: cover;
+}
+
+.aaronJudge {
+  position: relative;
+
+  height: 150px;
+  object-fit: cover;
+}
+
+.mikeTrout {
+  position: relative;
+
+  height: 150px;
+  object-fit: cover;
 }
